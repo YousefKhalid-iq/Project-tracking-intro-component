@@ -97,16 +97,13 @@
   color: hsl(231, 7%, 65%);
 }
 
-.header-links .circle-link {
-  visibility: hidden;
-  height: 0;
-  width: 0;
-}
-
-.header-links .border-link {
+.header-links .pricing-link:after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 70%;
   border-bottom: 1px solid hsla(231, 7%, 65%, 0.3);
   width: 90%;
-  margin: 0 auto;
   height: 1px;
 }
 
@@ -170,7 +167,7 @@ h1 {
   color: hsl(230, 29%, 20%);
 }
 
-h2 {
+.project-p {
   font-family: 'Barlow', sans-serif;
   color: hsl(230, 11%, 40%);
   width: 90%;
@@ -275,13 +272,13 @@ h2 {
     border-bottom: 0.1rem solid ;
   }
 
-  .header-links .border-link {
+  .header-links .pricing-link:after {
     display: none;
   }
 
-  .header-links .circle-link {
-    visibility: visible;
-    opacity: 0.2;
+  .header-links .login-link:before {
+    content: "•";  
+    margin: 0 5% 0 0;
   }
 
   .header-section {
@@ -341,7 +338,7 @@ h2 {
     font-size: 3rem;
   }
 
-  h2 {
+  .project-p {
     width: 110%;
     font-size: 1.6rem;
   }
